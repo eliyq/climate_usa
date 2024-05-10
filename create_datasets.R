@@ -2,8 +2,6 @@ main_dir <- "~/Downloads/advancedR/CRND0103-202404080750"
 folders <- list.dirs(main_dir, full.names = TRUE, recursive = FALSE)
 
 
-
-# QUESTION 2
 station_info <- data.frame()
 
 for (f in folders) {
@@ -42,8 +40,6 @@ tools::resaveRdaFiles("~/Downloads/climateUSA/data/station_info.RData", compress
 station_info <- subset(station_info, STATION_NAME != "AK_Huslia_27_W")
 
 
-
-# QUESTION 3
 climate_data <- data.frame()
 
 for (f in folders) {
